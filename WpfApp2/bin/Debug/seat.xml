@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ArrayOfSeat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Seat>
+    <Name />
+    <Number>A1</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>A2</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>A3</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>A4</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>B1</Number>
+  </Seat>
+  <Seat>
+    <Name>eric</Name>
+    <Number />
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>B3</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>B4</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>C1</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>C2</Number>
+  </Seat>
+  <Seat>
+    <Name>amanda</Name>
+    <Number />
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>C4</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>D1</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>D2</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>D3</Number>
+  </Seat>
+  <Seat>
+    <Name />
+    <Number>D4</Number>
+  </Seat>
+</ArrayOfSeat>

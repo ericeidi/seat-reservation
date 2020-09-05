@@ -1,0 +1,84 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MovieMax" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="365*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnConfirmSeat" Content="Confirm Seat" HorizontalAlignment="Left" Height="49" Margin="44,238,0,0" VerticalAlignment="Top" Width="120" Click="Btn_Confirm_Seat_Click" Foreground="Black" Visibility="Hidden" Grid.ColumnSpan="2" />
+
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="45,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"  Grid.ColumnSpan="2" Visibility="Hidden" />
+
+        <Label x:Name="lblReservedSeats" Content="" HorizontalAlignment="Left" Margin="549,372,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+
+        <Button x:Name="btn_A1" Visibility="Hidden" Content="A1" HorizontalAlignment="Left" Margin="239,88,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_A1_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_A2" Visibility="Hidden" Content="A2" HorizontalAlignment="Left" Margin="320,87,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_A2_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_A3"  Visibility="Hidden" Content="A3" HorizontalAlignment="Left" Margin="397,86,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_A3_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_A4" Visibility="Hidden" Content="A4" HorizontalAlignment="Left" Margin="476,87,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_A4_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_B1" Visibility="Hidden" Content="B1" HorizontalAlignment="Left" Margin="238,171,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_B1_Click" Background="GreenYellow"  Grid.Column="1" RenderTransformOrigin="0.436,1.1" />
+        <Button x:Name="btn_B2" Visibility="Hidden" Content="B2" HorizontalAlignment="Left" Margin="321,172,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_B2_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_B3" Visibility="Hidden" Content="B3" HorizontalAlignment="Left" Margin="397,173,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_B3_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_B4" Visibility="Hidden" Content="B4" HorizontalAlignment="Left" Margin="477,173,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_B4_Click" Background="GreenYellow"  Grid.Column="1" RenderTransformOrigin="0.14,-0.345" />
+        <Button x:Name="btnUnreserveSeat" Content="Unreserve Seat" HorizontalAlignment="Left" Height="49" Margin="114,10,0,0" VerticalAlignment="Top" Width="120" Click="Btn_Unreserve_Seat_Click" Foreground="Black" Grid.Column="1"               
+                
+                
+                />
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="128,136,0,0" VerticalAlignment="Top" Width="45" Click="BtnDelete_Click" Height="32" BorderThickness="0" Visibility="Hidden" Background="Red" Grid.Column="1" />
+        <Button x:Name="btnReserveSeat" Content="Reserve Seat" HorizontalAlignment="Left" Height="49" Margin="44,10,0,0" VerticalAlignment="Top" Width="120" Click="Btn_Reserve_Seat_Click" Foreground="Black" Grid.ColumnSpan="2"               
+                
+                
+                />
+        <Button x:Name="btn_clearA1" Visibility="Hidden" Content="Clear A1" HorizontalAlignment="Left" Margin="240,140,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearA1_Click" Height="18"  Background="Red" Grid.Column="1"/>
+        <Button x:Name="btn_clearA2" Visibility="Hidden" Content="Clear A2" HorizontalAlignment="Left" Margin="321,141,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearA2_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearA3" Visibility="Hidden" Content="Clear A3" HorizontalAlignment="Left" Margin="397,141,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearA3_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearA4" Visibility="Hidden" Content="Clear A4" HorizontalAlignment="Left" Margin="477,140,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearA4_Click" Height="18" Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearB1" Visibility="Hidden" Content="Clear B1" HorizontalAlignment="Left" Margin="238,221,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearB1_Click" Height="18"  Background="Red" Grid.Column="1" RenderTransformOrigin="0.197,0.656"/>
+        <Button x:Name="btn_clearB2" Visibility="Hidden" Content="Clear B2" HorizontalAlignment="Left" Margin="322,221,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearB2_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearB3" Visibility="Hidden" Content="Clear B3" HorizontalAlignment="Left" Margin="396,222,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearB3_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearB4" Visibility="Hidden" Content="Clear B4" HorizontalAlignment="Left" Margin="477,223,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearB4_Click" Height="18" Background="Red" Grid.Column="1" RenderTransformOrigin="0.226,-1.7" />
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="48,111,0,0" VerticalAlignment="Top" Width="60" Visibility="Hidden" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblSelected" Content="Selected" Grid.Column="1" HorizontalAlignment="Left" Margin="641,117,0,0" VerticalAlignment="Top" Width="66" FontSize="10" Visibility="Hidden"/>
+        <Label x:Name="lblAvailable" Content="Available" Grid.Column="1" HorizontalAlignment="Left" Margin="641,80,0,0" VerticalAlignment="Top" Width="66" FontSize="10" Visibility="Hidden"/>
+        <Label x:Name="lblUnavailable" Content="Unavailable " Grid.Column="1" HorizontalAlignment="Left" Margin="640,155,0,0" VerticalAlignment="Top" Width="66" FontSize="10" Visibility="Hidden"/>
+        <Rectangle x:Name="recGreen" Grid.Column="1" Fill="GreenYellow" HorizontalAlignment="Left" Height="21" Margin="647,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="56" Visibility="Hidden"/>
+        <Rectangle x:Name="recYellow" Grid.Column="1" Fill="Yellow" HorizontalAlignment="Left" Height="21" Margin="647,137,0,0" Stroke="Black" VerticalAlignment="Top" Width="56" Visibility="Hidden"/>
+        <Rectangle x:Name="recGrey" Grid.Column="1" Fill="#FFF4F4F4" HorizontalAlignment="Left" Height="21" Margin="647,175,0,0" Stroke="Black" VerticalAlignment="Top" Width="56" Visibility="Hidden"/>
+        <Label x:Name="lblInstructions" Content="Instructions" Grid.Column="1" HorizontalAlignment="Left" Margin="642,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.317,0.563" Visibility="Hidden"/>
+        <Button x:Name="btn_C1" Visibility="Hidden" Content="C1" HorizontalAlignment="Left" Margin="240,252,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_C1_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_C2" Visibility="Hidden" Content="C2" HorizontalAlignment="Left" Margin="321,251,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_C2_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_C3" Visibility="Hidden" Content="C3" HorizontalAlignment="Left" Margin="398,250,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_C3_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_C4" Visibility="Hidden" Content="C4" HorizontalAlignment="Left" Margin="477,251,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_C4_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_D1" Visibility="Hidden" Content="D1" HorizontalAlignment="Left" Margin="239,335,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_D1_Click" Background="GreenYellow"  Grid.Column="1" RenderTransformOrigin="0.436,1.1" />
+        <Button x:Name="btn_D2" Visibility="Hidden" Content="D2" HorizontalAlignment="Left" Margin="322,336,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_D2_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_D3" Visibility="Hidden" Content="D3" HorizontalAlignment="Left" Margin="398,337,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_D3_Click" Background="GreenYellow"  Grid.Column="1" />
+        <Button x:Name="btn_D4" Visibility="Hidden" Content="D4" HorizontalAlignment="Left" Margin="478,337,0,0" VerticalAlignment="Top" Width="47" Height="40" Click="Btn_D4_Click" Background="GreenYellow"  Grid.Column="1" RenderTransformOrigin="0.14,-0.345" />
+        <Button x:Name="btn_clearC1" Visibility="Hidden" Content="Clear C1" HorizontalAlignment="Left" Margin="241,304,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearC1_Click" Height="18"  Background="Red" Grid.Column="1"/>
+        <Button x:Name="btn_clearC2" Visibility="Hidden" Content="Clear C2" HorizontalAlignment="Left" Margin="322,305,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearC2_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearC3" Visibility="Hidden" Content="Clear C3" HorizontalAlignment="Left" Margin="398,305,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearC3_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearC4" Visibility="Hidden" Content="Clear C4" HorizontalAlignment="Left" Margin="478,304,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearC4_Click" Height="18" Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearD1" Visibility="Hidden" Content="Clear D1" HorizontalAlignment="Left" Margin="239,385,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearD1_Click" Height="18"  Background="Red" Grid.Column="1" RenderTransformOrigin="0.197,0.656"/>
+        <Button x:Name="btn_clearD2" Visibility="Hidden" Content="Clear D2" HorizontalAlignment="Left" Margin="323,385,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearD2_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearD3" Visibility="Hidden" Content="Clear D3" HorizontalAlignment="Left" Margin="397,386,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearD3_Click" Height="18"  Background="Red" Grid.Column="1" />
+        <Button x:Name="btn_clearD4" Visibility="Hidden" Content="Clear D4" HorizontalAlignment="Left" Margin="478,387,0,0" VerticalAlignment="Top" Width="47" Click="Btn_clearD4_Click" Height="18" Background="Red" Grid.Column="1" RenderTransformOrigin="0.226,-1.7" />
+        <Button x:Name="btn_clearAll" Content="Clear All" Visibility="Hidden" HorizontalAlignment="Left" Margin="57,380,0,0" VerticalAlignment="Top" Width="75" Click="Btn_ClearAll" Grid.ColumnSpan="2" Background="Red"/>
+        <Button x:Name="seatsZtoA" Visibility="Hidden" Content="Reserved Z-A" Grid.Column="1" HorizontalAlignment="Left" Margin="32,160,0,0" VerticalAlignment="Top" Width="116" Click="Button_Seats_ZtoA"/>
+        <DataGrid x:Name="dataGrid1" Visibility="Hidden" Grid.Column="1" HorizontalAlignment="Left" Height="189" Margin="167,105,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="btnDisplayLength" Visibility="Hidden" Content="Shortest to Longest" Grid.Column="1" HorizontalAlignment="Left" Margin="32,193,0,0" VerticalAlignment="Top" Width="115" Click="Button_List_By_Length"/>
+        <Button x:Name="availableSeatList" Content="Available Seats A-Z" Visibility="Hidden" Grid.Column="1" HorizontalAlignment="Left" Margin="31,228,0,0" VerticalAlignment="Top" Width="117" Click="Button_List_Available_Seats"/>
+        <Button x:Name="serialize" Visibility="Hidden" Content="Serialize" Grid.Column="1" HorizontalAlignment="Left" Margin="323,164,0,0" VerticalAlignment="Top" Width="75" Click="Button_Serialize"/>
+        <Button x:Name="deserialize" Visibility="Hidden" Content="Deserialize" Grid.Column="1" HorizontalAlignment="Left" Margin="324,207,0,0" VerticalAlignment="Top" Width="75" Click="Button_Deserialize"/>
+        <Button x:Name="btnListSeats" Content="List Seats" HorizontalAlignment="Left" Height="49" Margin="248,10,0,0" VerticalAlignment="Top" Width="120" Click="Button_List_Seats" Foreground="Black" Grid.Column="1"               
+                
+                
+                />
+
+    </Grid>
+
+</Window>
